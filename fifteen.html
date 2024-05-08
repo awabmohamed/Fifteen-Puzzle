@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Fifteen Puzzle</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+</head>
+<body onload="initializeGame()">
+    <div id="wrapper">
+        <h1>Fifteen Puzzle</h1>
+		<br>The goal of the fifteen puzzle is to un-jumble its fifteen squares by repeatedly making moves that slide squares into the empty space. How quickly can you solve it?</br>
+        <span id="win"></span>
+
+        <select id="characters" name="characters" title="Backgrounds" onchange="changeBackground()">
+            <option value="super-mario" id="super-mario">Super Mario</option>
+            
+        </select>
+
+        <div id="main">
+            <div id="one"      class="tile super-mario">1</div>
+            <div id="two"      class="tile super-mario">2</div>
+            <div id="three"    class="tile super-mario">3</div>
+            <div id="four"     class="tile super-mario">4</div>
+            <div id="five"     class="tile super-mario">5</div>
+            <div id="six"      class="tile super-mario">6</div>
+            <div id="seven"    class="tile super-mario">7</div>
+            <div id="eight"    class="tile super-mario">8</div>
+            <div id="nine"     class="tile super-mario">9</div>
+            <div id="ten"      class="tile super-mario">10</div>
+            <div id="eleven"   class="tile super-mario">11</div>
+            <div id="twelve"   class="tile super-mario">12</div>
+            <div id="thirteen" class="tile super-mario">13</div>
+            <div id="fourteen" class="tile super-mario">14</div>
+            <div id="fifteen"  class="tile super-mario">15</div>
+            <div id="sixteen"  class="tile"></div>
+        </div>
+
+        <button onclick="shuffleBoard()">Shuffle</button>
+		<button onclick="solvePuzzle()">Solve Puzzle</button>
+		 <br>American puzzle author and mathematician Sam Loyd is often falsely credited with creating the puzzle; indeed, Loyd claimed from 1891 until his death in 1911 that he invented it. The puzzle was actually created around 1874 by Noyes Palmer Chapman, a postmaster in Canastota, New York.</br>
+		 
+
+
+        <p>
+            <a href="https://jigsaw.w3.org/css-validator/" target="_blank"><img src="w3c-css.png" alt="W3C CSS" /> </a>
+            <a href="https://validator.w3.org/" target="_blank"><img src="w3c-xhtml.png" alt="W3C XHTML" /> </a>
+        </p>
+    </div>
+
+    <script type="text/javascript" src="fifteen.js"></script>
+</body>
+</html>
